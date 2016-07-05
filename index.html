@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link rel="stylesheet" href="css/lightbox.css">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
+<link href='http://fonts.useso.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!-- main content start-->
+	<div id="page-wrapper">
+		<!--banner-->
+		<div class="banner" id="home">
+			<div class="banner-right">
+				<h1 class="wow zoomIn animated" data-wow-delay=".5s"><a href="index.html">Liqueur</a></h1>
+			</div>
+			<div class="banner-left">
+				<!--navigation-->
+				<nav> 
+					<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+					<a href="#home" class="active scroll">Home</a> 
+					<a href="about.html">About</a> 
+					<a href="typo.html">Typography</a> 
+					<a href="#blog" class="scroll">Blog</a>
+					<a href="#gallery" class="scroll">Gallery</a> 
+					<a href="contact.html">Contact</a> 
+				</nav>
+				<script>
+					(function($){
+						// Menu Functions
+						$(document).ready(function(){
+						$('#menuToggle').click(function(e){
+							var $parent = $(this).parent('nav');
+						  $parent.toggleClass("open");
+						  var navState = $parent.hasClass('open') ? "hide" : "show";
+						  $(this).attr("title", navState + " navigation");
+								// Set the timeout to the animation length in the CSS.
+								setTimeout(function(){
+									console.log("timeout set");
+									$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+								}, 200);
+							e.preventDefault();
+						});
+					  });
+					})(jQuery);
+				</script>
+				<!--//navigation-->
+				<div class="banner-text">
+					<h2 class="wow fadeInDownBig animated" data-wow-delay=".5s">Liqueur <br>is strong & <br> sweet alcohol</h2>
+					<p class="wow fadeInUpBig animated" data-wow-delay=".5s">Vestibulum dictum fringilla accumsan fusce dolor tellus malesuada a aliquam id, pellentesque ut ante sed dapibus. </p>
+					<a href="about.html" class="buy btn-wayra wow zoomInRight animated" data-wow-delay=".5s"> More About</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!--//banner-->
+		<!--banner-bottom-->
+		<div class="banner-bottom">
+			<div class="bnr-btm-left">
+				<img src="images/img1.jpg" alt="" class="wow fadeInLeft animated" data-wow-delay=".5s"/>
+			</div>
+			<div class="bnr-btm-right">				
+				<h3 class="wow fadeInRight animated" data-wow-delay=".5s">Magnam aliquam quaerat voluptatemut enim minima laboriosam</h3>
+				<p class="wow fadeInRight animated" data-wow-delay=".5s">Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. More recently with desktop.</p>
+				<a href="single.html" class="buy btn-wayra wow zoomIn animated" data-wow-delay=".5s"> See More</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="banner-about">
+			<div class="banner-about-left">	
+				<h3 class="wow fadeInLeft animated" data-wow-delay=".5s">Magnam aliquam quaerat voluptatemut enim minima laboriosam</h3>
+				<ul>
+					<li class="wow zoomIn animated" data-wow-delay=".5s">
+						<span class="glyphicon glyphicon-glass effect-1" aria-hidden="true"></span>
+						<p>Curabitur hendrerit bibendum</p>
+					</li>
+					<li class="wow zoomIn animated" data-wow-delay=".5s">
+						<span class="glyphicon glyphicon-heart effect-1" aria-hidden="true"></span>
+						<p>Finibus Bonorum et Malorum</p>
+					</li>
+					<li class="wow zoomIn animated" data-wow-delay=".5s">
+						<span class="glyphicon glyphicon-check effect-1" aria-hidden="true"></span>
+						<p> Donec non dolor lectus mollis</p>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--//banner-bottom-->
+		<!--gallery-->
+		<div class="gallery" id="gallery">		
+			<h3 class="title">Our Gallery</h3>
+			<div class="gallery-info">	
+				<div class="col-md-6 gallery-grids glry-grid1">
+					<div class="gallery-grids-top">
+						<a class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".5s" href="images/g1.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ">
+							<img src="images/g1.jpg" class="img-responsive" alt=""/>
+							<div class="b-wrapper">
+								<span class="b-animate b-from-left">
+									<img class="img-responsive" src="images/e.png" alt=""/>
+								</span>					
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grids-top">
+						<div class="col-md-6 bottom-grids">
+							<a class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".5s" href="images/g2.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ">
+								<img src="images/g2.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<span class="b-animate b-from-left">
+										<img class="img-responsive" src="images/e.png" alt=""/>
+									</span>					
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 bottom-grids">
+							<a class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".5s" href="images/g3.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ">
+								<img src="images/g3.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<span class="b-animate b-from-left">
+										<img class="img-responsive" src="images/e.png" alt=""/>
+									</span>					
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-3 gallery-grids glry-grid2">
+					<a class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".5s" href="images/g4.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ">
+						<img src="images/g4.jpg" class="img-responsive" alt=""/>
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 gallery-grids glry-grid3">
+					<a class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".5s" href="images/g5.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ">
+						<img src="images/g5.jpg" class="img-responsive" alt=""/>
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+					<a class="b-link-stripe b-animate-go wow zoomIn animated" data-wow-delay=".5s" href="images/g6.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ">
+						<img src="images/g6.jpg" class="img-responsive" alt=""/>
+						<div class="b-wrapper">
+							<span class="b-animate b-from-left">
+								<img class="img-responsive" src="images/e.png" alt=""/>
+							</span>					
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+				<script src="js/lightbox-plus-jquery.min.js"> </script>
+			</div>
+		</div>
+		<!--//gallery-->
+		<!--blog-->
+		<div class="blog" id="blog">		
+			<div class="container">
+				<div class="col-md-4 blog-left">
+					<div class="blog-left1 wow fadeInDownBig animated" data-wow-delay=".5s">
+						<h3 class="title wow fadeInLeftBig animated" data-wow-delay=".5s">Latest Blog</h3>
+						<p class="title wow fadeInUpBig animated" data-wow-delay=".5s"> Nunc pharetra in odio sit amet maximus. Morbi imperdiet finibus nisi nec aliquam. Morbi vestibulum arcu nisi, sit amet mollis dolor euismod vitae In aliquet elementum nisl a porta. Morbi a efficitur lectus. Nunc in erat iaculis posuere turpis quis nisi nec  
+						luctus eget urna. Nunc maximus tincidunt ante efficitur mauris.</p>
+					</div>
+				</div>
+				<div class="col-md-8 blog-right">
+					<div class="col-md-6 blog-right-grid wow zoomIn animated" data-wow-delay=".5s">
+						<a href="single.html"><img src="images/img2.jpg" alt=" " class="img-responsive"></a>
+						<h4><a href="single.html">sunt in culpa qui officia velit</a></h4>
+						<p> Integer interdum eros vitae sem ultrices, sed eleifend tellus tincidunt. Nam nisl arcu, porttitor sit amet</p>
+						<a href="single.html" class="buy btn-wayra"> Read More</a>
+					</div>
+					<div class="col-md-6 blog-right-grid wow zoomIn animated" data-wow-delay=".5s">
+						<a href="single.html"><img src="images/img3.jpg" alt=" " class="img-responsive"></a>
+						<h4><a href="single.html">Neque porro quisquam est dolorem</a></h4>
+						<p> Integer interdum eros vitae sem ultrices, sed eleifend tellus tincidunt. Nam nisl arcu, porttitor sit amet</p>
+						<a href="single.html" class="buy btn-wayra"> Read More</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--//gallery-->
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-4 footer-grids wow fadeInDown animated" data-wow-delay=".5s">
+					<h3>Review :</h3>
+					<p>Sed ut turpis elit ullamcorper in auctor non, accumsan vel lacus nulla auctor cursus nunc. Maecenas ultricies dolor in urna tempus, id egestas erat finibus  interdum lectus eget scelerisque.</p>
+				</div>
+				<div class="col-md-4 footer-grids footer-address wow fadeInDown animated" data-wow-delay=".5s">
+					<h3>Contact Us:</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-send"></i> 123 San Sebastian <span> New York City USA. </span></li>
+						<li><i class="glyphicon glyphicon-phone"></i> +11 222 3333</li>
+						<li><i class="glyphicon glyphicon-envelope"></i><a href="mailto:example@mail.com">mail@example.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-grids wow fadeInDown animated" data-wow-delay=".5s">
+					<h3>Follow us:</h3>
+					<ul>
+						<li><a href="#"><img src="images/f1.png" alt=""> FACEBOOK</a></li>
+						<li><a href="#"><img src="images/f2.png" alt=""> GOOGLE+</a></li>
+						<li><a href="#"><img src="images/f3.png" alt=""> LINKEDIN</a></li>
+						<li><a href="#"><img src="images/f4.png" alt=""> TWITTER</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--//footer-->
+		<!--copy-right-->
+		<div class="copy-right">
+			<div class="container">
+				<p class="wow bounceIn animated" data-wow-delay=".5s">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+		</div>
+		<!--//copy-right-->
+	</div>
+	<!--//main content start-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
