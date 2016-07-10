@@ -37,9 +37,27 @@
 			});
 		});
 </script>
+
+<link href='css/nprogress.css' rel='stylesheet' />
+<script src='js/nprogress.js'></script>
+
 <!--//end-smoth-scrolling-->
 </head>
 <body>
+
+<script>
+    $('body').show();
+    $('.version').text(NProgress.version);
+
+NProgress.start();
+    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+
+    $("#b-0").click(function() { NProgress.start(); });
+    $("#b-40").click(function() { NProgress.set(0.4); });
+    $("#b-inc").click(function() { NProgress.inc(); });
+    $("#b-100").click(function() { NProgress.done(); });
+</script>
+
 	<!-- main content start-->
 	<div id="page-wrapper">
 		<!--banner-->
@@ -221,6 +239,26 @@
 			</div>
 		</div>
 		<!--//gallery-->
+
+
+<!-- 多说评论框 start -->
+	<div style="margin-left:5%; margin-right:5%" class="ds-thread" data-thread-key="001" data-title="index" data-url="https://yangyesx.github.io/blogs/index.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yangye"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'http:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+		
 		<!--footer-->
 		<div class="footer">
 			<div class="container">
